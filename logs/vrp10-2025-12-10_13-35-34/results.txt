@@ -1,0 +1,295 @@
+actor_net_lr: 0.0001
+agent_type: attention
+batch_size: 128
+beam_width: 10
+capacity: 20
+critic_net_lr: 0.0001
+data_dir: data
+decode_len: 16
+demand_max: 9
+disable_tqdm: True
+dropout: 0.1
+embedding_dim: 128
+entropy_coeff: 0.0
+forget_bias: 1.0
+gpu: 3
+hidden_dim: 128
+infer_type: batch
+input_dim: 3
+is_train: True
+load_path: 
+log_dir: logs/vrp10-2025-12-10_13-35-34
+log_interval: 200
+mask_glimpses: True
+mask_pointer: True
+max_grad_norm: 2.0
+model_dir: logs/vrp10-2025-12-10_13-35-34\model
+n_cust: 10
+n_glimpses: 0
+n_nodes: 11
+n_process_blocks: 3
+n_train: 10000
+random_seed: 24601
+rnn_layers: 1
+save_interval: 10000
+stdout_print: True
+tanh_exploration: 10.0
+task: vrp10
+task_name: vrp
+test_interval: 200
+test_size: 1000
+use_tanh: False
+# Set random seed to 24601
+It took 7.956615924835205s to build the agent.
+Training started ...
+Train Step: 0 -- Time: 00:00:05 -- Train reward: 7.686910629272461 -- Value: -0.08862839639186859
+    actor loss: -159.75723266601562 -- critic loss: 62.52488708496094
+Average of greedy in batch-mode: 7.781462669372559 -- std 1.3556605577468872 -- time 1.117187261581421 s
+Average of beam_search in batch-mode: 7.036495685577393 -- std 1.249889850616455 -- time 2.6213595867156982 s
+##################################################################
+Train Step: 200 -- Time: 00:00:31 -- Train reward: 7.157299995422363 -- Value: 6.771538734436035
+    actor loss: -6.93659782409668 -- critic loss: 1.9083690643310547
+Average of greedy in batch-mode: 6.8319807052612305 -- std 1.2189055681228638 -- time 0.6204023361206055 s
+Average of beam_search in batch-mode: 6.249329090118408 -- std 1.1042217016220093 -- time 2.3091511726379395 s
+##################################################################
+Train Step: 400 -- Time: 00:00:33 -- Train reward: 7.056229114532471 -- Value: 6.991747856140137
+    actor loss: -0.9168074727058411 -- critic loss: 1.225191593170166
+Average of greedy in batch-mode: 6.713764190673828 -- std 1.1748155355453491 -- time 0.5887629985809326 s
+Average of beam_search in batch-mode: 6.134141445159912 -- std 1.0478253364562988 -- time 2.346543312072754 s
+##################################################################
+Train Step: 600 -- Time: 00:00:34 -- Train reward: 7.0104594230651855 -- Value: 6.9318437576293945
+    actor loss: -1.2889773845672607 -- critic loss: 1.535789132118225
+Average of greedy in batch-mode: 6.638912200927734 -- std 1.1486072540283203 -- time 0.6701407432556152 s
+Average of beam_search in batch-mode: 6.080877304077148 -- std 1.0482231378555298 -- time 2.6902525424957275 s
+##################################################################
+Train Step: 800 -- Time: 00:00:36 -- Train reward: 7.039251327514648 -- Value: 6.927169322967529
+    actor loss: -1.7362735271453857 -- critic loss: 1.341534972190857
+Average of greedy in batch-mode: 6.6015625 -- std 1.1429437398910522 -- time 0.6400909423828125 s
+Average of beam_search in batch-mode: 6.038661956787109 -- std 1.048825740814209 -- time 2.530231475830078 s
+##################################################################
+Train Step: 1000 -- Time: 00:00:36 -- Train reward: 6.7091217041015625 -- Value: 6.897068023681641
+    actor loss: 1.9585895538330078 -- critic loss: 0.9918885231018066
+Average of greedy in batch-mode: 6.51539945602417 -- std 1.131730556488037 -- time 0.6137199401855469 s
+Average of beam_search in batch-mode: 5.9675726890563965 -- std 1.0309021472930908 -- time 2.3583621978759766 s
+##################################################################
+Train Step: 1200 -- Time: 00:00:35 -- Train reward: 6.712508678436279 -- Value: 6.754515647888184
+    actor loss: 0.2994599938392639 -- critic loss: 1.0609774589538574
+Average of greedy in batch-mode: 6.379627227783203 -- std 1.0747771263122559 -- time 0.6230063438415527 s
+Average of beam_search in batch-mode: 5.8240532875061035 -- std 0.9994926452636719 -- time 2.325084686279297 s
+##################################################################
+Train Step: 1400 -- Time: 00:00:34 -- Train reward: 6.715835094451904 -- Value: 6.683056354522705
+    actor loss: -1.1757973432540894 -- critic loss: 0.9893577098846436
+Average of greedy in batch-mode: 6.22963285446167 -- std 1.1339105367660522 -- time 0.6588521003723145 s
+Average of beam_search in batch-mode: 5.685163497924805 -- std 1.0101577043533325 -- time 2.6240296363830566 s
+##################################################################
+Train Step: 1600 -- Time: 00:00:32 -- Train reward: 6.484868049621582 -- Value: 6.392460823059082
+    actor loss: -1.2948110103607178 -- critic loss: 1.0024473667144775
+Average of greedy in batch-mode: 6.065634727478027 -- std 1.1071680784225464 -- time 0.6222412586212158 s
+Average of beam_search in batch-mode: 5.569544792175293 -- std 0.9772136211395264 -- time 2.4416544437408447 s
+##################################################################
+Train Step: 1800 -- Time: 00:00:34 -- Train reward: 6.3164567947387695 -- Value: 6.403532981872559
+    actor loss: -0.09068593382835388 -- critic loss: 0.9000489711761475
+Average of greedy in batch-mode: 6.037776470184326 -- std 1.1686317920684814 -- time 0.5655629634857178 s
+Average of beam_search in batch-mode: 5.556546211242676 -- std 1.0065851211547852 -- time 2.645096778869629 s
+##################################################################
+Train Step: 2000 -- Time: 00:00:34 -- Train reward: 6.154567241668701 -- Value: 6.259104251861572
+    actor loss: 0.3472740054130554 -- critic loss: 0.7550813555717468
+Average of greedy in batch-mode: 5.998662948608398 -- std 1.1606841087341309 -- time 0.6066524982452393 s
+Average of beam_search in batch-mode: 5.5057525634765625 -- std 0.9857696890830994 -- time 2.56925368309021 s
+##################################################################
+Train Step: 2200 -- Time: 00:00:33 -- Train reward: 6.190690994262695 -- Value: 6.167853355407715
+    actor loss: -0.9755916595458984 -- critic loss: 0.9361789226531982
+Average of greedy in batch-mode: 5.984743595123291 -- std 1.1671512126922607 -- time 0.6194612979888916 s
+Average of beam_search in batch-mode: 5.497023105621338 -- std 1.0114995241165161 -- time 2.540870189666748 s
+##################################################################
+Train Step: 2400 -- Time: 00:00:33 -- Train reward: 6.182002067565918 -- Value: 6.232203483581543
+    actor loss: -0.27108442783355713 -- critic loss: 0.7397440075874329
+Average of greedy in batch-mode: 5.966962814331055 -- std 1.0920166969299316 -- time 0.6011359691619873 s
+Average of beam_search in batch-mode: 5.4685468673706055 -- std 0.9375585317611694 -- time 2.4689574241638184 s
+##################################################################
+Train Step: 2600 -- Time: 00:00:35 -- Train reward: 5.960711479187012 -- Value: 5.945714473724365
+    actor loss: -0.7853060364723206 -- critic loss: 0.7219687700271606
+Average of greedy in batch-mode: 5.951061725616455 -- std 1.098003625869751 -- time 0.6239888668060303 s
+Average of beam_search in batch-mode: 5.478133678436279 -- std 0.9531728029251099 -- time 2.619584321975708 s
+##################################################################
+Train Step: 2800 -- Time: 00:00:36 -- Train reward: 5.989961624145508 -- Value: 6.123091697692871
+    actor loss: 0.3416159749031067 -- critic loss: 0.6665481925010681
+Average of greedy in batch-mode: 5.947665214538574 -- std 1.1188985109329224 -- time 0.6827380657196045 s
+Average of beam_search in batch-mode: 5.453827381134033 -- std 0.958508312702179 -- time 2.901634693145752 s
+##################################################################
+Train Step: 3000 -- Time: 00:00:38 -- Train reward: 5.886724472045898 -- Value: 6.03831148147583
+    actor loss: 0.41209137439727783 -- critic loss: 0.8226230144500732
+Average of greedy in batch-mode: 5.9259796142578125 -- std 1.1045230627059937 -- time 0.6522858142852783 s
+Average of beam_search in batch-mode: 5.440928936004639 -- std 0.956752359867096 -- time 2.7464988231658936 s
+##################################################################
+Train Step: 3200 -- Time: 00:00:40 -- Train reward: 5.816508769989014 -- Value: 5.811163425445557
+    actor loss: -0.4012683629989624 -- critic loss: 0.7541038990020752
+Average of greedy in batch-mode: 5.9154133796691895 -- std 1.1151117086410522 -- time 0.6864042282104492 s
+Average of beam_search in batch-mode: 5.440386772155762 -- std 0.9508516192436218 -- time 2.654252529144287 s
+##################################################################
+Train Step: 3400 -- Time: 00:00:37 -- Train reward: 6.0161614418029785 -- Value: 5.869699954986572
+    actor loss: -1.269318699836731 -- critic loss: 0.7364975810050964
+Average of greedy in batch-mode: 5.894040107727051 -- std 1.1024091243743896 -- time 0.7165918350219727 s
+Average of beam_search in batch-mode: 5.428452014923096 -- std 0.9478474855422974 -- time 2.800330877304077 s
+##################################################################
+Train Step: 3600 -- Time: 00:00:36 -- Train reward: 6.040205955505371 -- Value: 6.037044048309326
+    actor loss: -0.14828693866729736 -- critic loss: 0.7193341851234436
+Average of greedy in batch-mode: 5.922273635864258 -- std 1.14891517162323 -- time 0.6701152324676514 s
+Average of beam_search in batch-mode: 5.447989463806152 -- std 1.0009872913360596 -- time 2.7635793685913086 s
+##################################################################
+Train Step: 3800 -- Time: 00:00:38 -- Train reward: 5.83413028717041 -- Value: 5.934142112731934
+    actor loss: 0.16320471465587616 -- critic loss: 0.5520105957984924
+Average of greedy in batch-mode: 5.892939567565918 -- std 1.114311695098877 -- time 0.6428728103637695 s
+Average of beam_search in batch-mode: 5.418919086456299 -- std 0.9595057368278503 -- time 2.617232084274292 s
+##################################################################
+Train Step: 4000 -- Time: 00:00:37 -- Train reward: 5.91420316696167 -- Value: 5.969311714172363
+    actor loss: -0.022678174078464508 -- critic loss: 0.6831004619598389
+Average of greedy in batch-mode: 5.886782169342041 -- std 1.1116708517074585 -- time 0.6559934616088867 s
+Average of beam_search in batch-mode: 5.412818431854248 -- std 0.9475014805793762 -- time 2.681697130203247 s
+##################################################################
+Train Step: 4200 -- Time: 00:00:36 -- Train reward: 5.754543304443359 -- Value: 5.789831638336182
+    actor loss: -0.2031991183757782 -- critic loss: 0.4786291718482971
+Average of greedy in batch-mode: 5.88812255859375 -- std 1.105429768562317 -- time 0.5938704013824463 s
+Average of beam_search in batch-mode: 5.4268293380737305 -- std 0.9552046656608582 -- time 2.6485846042633057 s
+##################################################################
+Train Step: 4400 -- Time: 00:00:37 -- Train reward: 5.994015216827393 -- Value: 6.032759666442871
+    actor loss: 0.227989062666893 -- critic loss: 0.667616605758667
+Average of greedy in batch-mode: 5.862968921661377 -- std 1.0752190351486206 -- time 0.6167333126068115 s
+Average of beam_search in batch-mode: 5.408106327056885 -- std 0.9422978758811951 -- time 2.6491456031799316 s
+##################################################################
+Train Step: 4600 -- Time: 00:00:36 -- Train reward: 5.847708702087402 -- Value: 5.909057140350342
+    actor loss: 0.0067577362060546875 -- critic loss: 0.573938250541687
+Average of greedy in batch-mode: 5.879351615905762 -- std 1.0940172672271729 -- time 0.6312093734741211 s
+Average of beam_search in batch-mode: 5.407351970672607 -- std 0.953854501247406 -- time 2.6529440879821777 s
+##################################################################
+Train Step: 4800 -- Time: 00:00:40 -- Train reward: 5.785625457763672 -- Value: 5.804303169250488
+    actor loss: -0.25266391038894653 -- critic loss: 0.5432382822036743
+Average of greedy in batch-mode: 5.853585243225098 -- std 1.0958709716796875 -- time 0.6516444683074951 s
+Average of beam_search in batch-mode: 5.385241508483887 -- std 0.9546342492103577 -- time 2.809985637664795 s
+##################################################################
+Train Step: 5000 -- Time: 00:00:40 -- Train reward: 5.901375770568848 -- Value: 5.868198394775391
+    actor loss: -0.60775226354599 -- critic loss: 0.6738083362579346
+Average of greedy in batch-mode: 5.866528511047363 -- std 1.1108952760696411 -- time 0.80792236328125 s
+Average of beam_search in batch-mode: 5.387630939483643 -- std 0.955373227596283 -- time 2.8094217777252197 s
+##################################################################
+Train Step: 5200 -- Time: 00:00:41 -- Train reward: 5.883955001831055 -- Value: 5.8873467445373535
+    actor loss: -0.20886127650737762 -- critic loss: 0.6265707015991211
+Average of greedy in batch-mode: 5.845613479614258 -- std 1.0995028018951416 -- time 0.7751235961914062 s
+Average of beam_search in batch-mode: 5.393539905548096 -- std 0.9607000946998596 -- time 2.9184319972991943 s
+##################################################################
+Train Step: 5400 -- Time: 00:00:41 -- Train reward: 5.942874431610107 -- Value: 5.87898588180542
+    actor loss: -0.5431902408599854 -- critic loss: 0.679887056350708
+Average of greedy in batch-mode: 5.856393337249756 -- std 1.1001721620559692 -- time 0.7554686069488525 s
+Average of beam_search in batch-mode: 5.39181661605835 -- std 0.9589299559593201 -- time 2.828076124191284 s
+##################################################################
+Train Step: 5600 -- Time: 00:00:37 -- Train reward: 5.860123157501221 -- Value: 5.998892784118652
+    actor loss: 0.7815408706665039 -- critic loss: 0.6092146635055542
+Average of greedy in batch-mode: 5.83871603012085 -- std 1.1034893989562988 -- time 0.6540348529815674 s
+Average of beam_search in batch-mode: 5.388824939727783 -- std 0.9585477709770203 -- time 2.6627426147460938 s
+##################################################################
+Train Step: 5800 -- Time: 00:00:37 -- Train reward: 5.759832859039307 -- Value: 5.826395034790039
+    actor loss: 0.18248872458934784 -- critic loss: 0.544223427772522
+Average of greedy in batch-mode: 5.841172695159912 -- std 1.0897464752197266 -- time 0.651756763458252 s
+Average of beam_search in batch-mode: 5.386721611022949 -- std 0.9556620121002197 -- time 2.5663483142852783 s
+##################################################################
+Train Step: 6000 -- Time: 00:00:39 -- Train reward: 5.856527805328369 -- Value: 5.8535943031311035
+    actor loss: 0.3606910705566406 -- critic loss: 0.6149976849555969
+Average of greedy in batch-mode: 5.84268045425415 -- std 1.110355257987976 -- time 0.5658218860626221 s
+Average of beam_search in batch-mode: 5.381531238555908 -- std 0.9610726833343506 -- time 2.710172653198242 s
+##################################################################
+Train Step: 6200 -- Time: 00:00:39 -- Train reward: 5.883326530456543 -- Value: 5.834836959838867
+    actor loss: -0.41251838207244873 -- critic loss: 0.6783674955368042
+Average of greedy in batch-mode: 5.831871509552002 -- std 1.0976207256317139 -- time 0.5400865077972412 s
+Average of beam_search in batch-mode: 5.364916801452637 -- std 0.9515323638916016 -- time 2.2284374237060547 s
+##################################################################
+Train Step: 6400 -- Time: 00:00:38 -- Train reward: 5.826728343963623 -- Value: 5.728833198547363
+    actor loss: -0.905386209487915 -- critic loss: 0.7748832106590271
+Average of greedy in batch-mode: 5.815086364746094 -- std 1.091936469078064 -- time 0.661426305770874 s
+Average of beam_search in batch-mode: 5.362189769744873 -- std 0.9558724761009216 -- time 2.859290599822998 s
+##################################################################
+Train Step: 6600 -- Time: 00:00:41 -- Train reward: 6.019626617431641 -- Value: 5.967459678649902
+    actor loss: -0.7107861638069153 -- critic loss: 0.7180836200714111
+Average of greedy in batch-mode: 5.812552452087402 -- std 1.1060711145401 -- time 0.7077977657318115 s
+Average of beam_search in batch-mode: 5.365045070648193 -- std 0.9569326043128967 -- time 2.7303080558776855 s
+##################################################################
+Train Step: 6800 -- Time: 00:00:42 -- Train reward: 5.707913398742676 -- Value: 5.7161407470703125
+    actor loss: 0.036380887031555176 -- critic loss: 0.5503197908401489
+Average of greedy in batch-mode: 5.788661003112793 -- std 1.0858421325683594 -- time 0.9831469058990479 s
+Average of beam_search in batch-mode: 5.341830730438232 -- std 0.9696398973464966 -- time 2.8743515014648438 s
+##################################################################
+Train Step: 7000 -- Time: 00:00:43 -- Train reward: 5.774201393127441 -- Value: 5.7956647872924805
+    actor loss: -0.053025126457214355 -- critic loss: 0.5592951774597168
+Average of greedy in batch-mode: 5.7685041427612305 -- std 1.079734206199646 -- time 0.7601487636566162 s
+Average of beam_search in batch-mode: 5.333179950714111 -- std 0.9581906795501709 -- time 2.632702350616455 s
+##################################################################
+Train Step: 7200 -- Time: 00:00:44 -- Train reward: 5.913342475891113 -- Value: 5.836461544036865
+    actor loss: -0.6848305463790894 -- critic loss: 0.5555360317230225
+Average of greedy in batch-mode: 5.756859302520752 -- std 1.0784989595413208 -- time 0.6372027397155762 s
+Average of beam_search in batch-mode: 5.3159685134887695 -- std 0.970007598400116 -- time 2.5760703086853027 s
+##################################################################
+Train Step: 7400 -- Time: 00:00:40 -- Train reward: 5.8698410987854 -- Value: 5.904359340667725
+    actor loss: -0.3036347031593323 -- critic loss: 0.631385087966919
+Average of greedy in batch-mode: 5.711503028869629 -- std 1.0711640119552612 -- time 0.7437546253204346 s
+Average of beam_search in batch-mode: 5.293455123901367 -- std 0.9357484579086304 -- time 2.7578186988830566 s
+##################################################################
+Train Step: 7600 -- Time: 00:00:42 -- Train reward: 5.7667059898376465 -- Value: 5.728590965270996
+    actor loss: -0.5407530069351196 -- critic loss: 0.40349286794662476
+Average of greedy in batch-mode: 5.6302170753479 -- std 1.056644082069397 -- time 0.8058013916015625 s
+Average of beam_search in batch-mode: 5.220728397369385 -- std 0.9312053322792053 -- time 2.9944913387298584 s
+##################################################################
+Train Step: 7800 -- Time: 00:00:39 -- Train reward: 5.724351406097412 -- Value: 5.760897159576416
+    actor loss: -0.034674614667892456 -- critic loss: 0.5628304481506348
+Average of greedy in batch-mode: 5.498470783233643 -- std 1.0118992328643799 -- time 0.6976485252380371 s
+Average of beam_search in batch-mode: 5.130337238311768 -- std 0.9063804745674133 -- time 2.742541790008545 s
+##################################################################
+Train Step: 8000 -- Time: 00:00:40 -- Train reward: 5.567120552062988 -- Value: 5.61916971206665
+    actor loss: 0.22033362090587616 -- critic loss: 0.4952932298183441
+Average of greedy in batch-mode: 5.399997234344482 -- std 0.9917533993721008 -- time 0.5663795471191406 s
+Average of beam_search in batch-mode: 5.062408924102783 -- std 0.906341016292572 -- time 2.6443324089050293 s
+##################################################################
+Train Step: 8200 -- Time: 00:00:39 -- Train reward: 5.400913238525391 -- Value: 5.479679107666016
+    actor loss: 0.3938192129135132 -- critic loss: 0.43428298830986023
+Average of greedy in batch-mode: 5.354030132293701 -- std 0.9576257467269897 -- time 0.8225796222686768 s
+Average of beam_search in batch-mode: 5.0173845291137695 -- std 0.8967375755310059 -- time 2.916806221008301 s
+##################################################################
+Train Step: 8400 -- Time: 00:00:42 -- Train reward: 5.378416538238525 -- Value: 5.369597434997559
+    actor loss: -0.16968794167041779 -- critic loss: 0.5395410060882568
+Average of greedy in batch-mode: 5.281857967376709 -- std 0.9903683662414551 -- time 0.6939830780029297 s
+Average of beam_search in batch-mode: 4.932275772094727 -- std 0.8967095017433167 -- time 3.2950663566589355 s
+##################################################################
+Train Step: 8600 -- Time: 00:00:41 -- Train reward: 5.235889434814453 -- Value: 5.378507137298584
+    actor loss: 0.3120398223400116 -- critic loss: 0.47013282775878906
+Average of greedy in batch-mode: 5.235579967498779 -- std 0.9829972982406616 -- time 0.7611546516418457 s
+Average of beam_search in batch-mode: 4.905162334442139 -- std 0.8878395557403564 -- time 2.9331109523773193 s
+##################################################################
+Train Step: 8800 -- Time: 00:00:39 -- Train reward: 5.516098976135254 -- Value: 5.445211887359619
+    actor loss: -0.665062427520752 -- critic loss: 0.4454021751880646
+Average of greedy in batch-mode: 5.206279277801514 -- std 0.9889176487922668 -- time 0.6809065341949463 s
+Average of beam_search in batch-mode: 4.884493827819824 -- std 0.8905987739562988 -- time 2.683562755584717 s
+##################################################################
+Train Step: 9000 -- Time: 00:00:39 -- Train reward: 5.322170257568359 -- Value: 5.334588050842285
+    actor loss: -0.3484830856323242 -- critic loss: 0.46825405955314636
+Average of greedy in batch-mode: 5.210153102874756 -- std 0.9800605177879333 -- time 0.6662085056304932 s
+Average of beam_search in batch-mode: 4.897758960723877 -- std 0.8854285478591919 -- time 2.6352028846740723 s
+##################################################################
+Train Step: 9200 -- Time: 00:00:40 -- Train reward: 5.307590484619141 -- Value: 5.185919761657715
+    actor loss: -0.893495500087738 -- critic loss: 0.41178157925605774
+Average of greedy in batch-mode: 5.157270431518555 -- std 0.972606897354126 -- time 0.6017937660217285 s
+Average of beam_search in batch-mode: 4.848571300506592 -- std 0.8959364295005798 -- time 2.6437828540802 s
+##################################################################
+Train Step: 9400 -- Time: 00:00:40 -- Train reward: 5.305304527282715 -- Value: 5.3622941970825195
+    actor loss: 0.13789963722229004 -- critic loss: 0.42470887303352356
+Average of greedy in batch-mode: 5.167821407318115 -- std 0.9942296147346497 -- time 0.6627058982849121 s
+Average of beam_search in batch-mode: 4.8441362380981445 -- std 0.8962498903274536 -- time 2.883824586868286 s
+##################################################################
+Train Step: 9600 -- Time: 00:00:41 -- Train reward: 5.373695373535156 -- Value: 5.519520282745361
+    actor loss: 0.3971977233886719 -- critic loss: 0.4703996777534485
+Average of greedy in batch-mode: 5.153006553649902 -- std 0.9818744659423828 -- time 0.7221896648406982 s
+Average of beam_search in batch-mode: 4.840069770812988 -- std 0.8949390053749084 -- time 3.1060943603515625 s
+##################################################################
+Train Step: 9800 -- Time: 00:00:43 -- Train reward: 5.314187526702881 -- Value: 5.237260818481445
+    actor loss: -0.45770496129989624 -- critic loss: 0.42266935110092163
+Average of greedy in batch-mode: 5.1489715576171875 -- std 0.9790957570075989 -- time 0.7391412258148193 s
+Average of beam_search in batch-mode: 4.835838794708252 -- std 0.8813544511795044 -- time 2.9659507274627686 s
+##################################################################
+Total time is 00:32:11
