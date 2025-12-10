@@ -4,7 +4,7 @@ A machine learning system that optimizes delivery routes in real-time as new cus
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Traditional route planning assumes all delivery locations are known upfront. In reality, drivers receive new addresses throughout their shift via text message. Our system solves this by continuously re-optimizing routes as new delivery requests arrive, reducing total driving distance and delivery time.
 
@@ -12,7 +12,7 @@ Traditional route planning assumes all delivery locations are known upfront. In 
 
 ---
 
-## 🚀 Our Solution
+##  Our Solution
 
 ### Two-Part Architecture
 
@@ -39,7 +39,7 @@ Traditional route planning assumes all delivery locations are known upfront. In 
 
 ---
 
-## 📊 Key Results
+##  Key Results
 
 - **Route Efficiency:** 15-20% improvement over static planning
 - **Real-time Adaptation:** Route updates in <1 second
@@ -63,24 +63,7 @@ Traditional route planning assumes all delivery locations are known upfront. In 
 
 ---
 
-## 📁 Project Structure
-
-```
-├── data/
-│   └── generate_data.py          # Synthetic location data generation
-├── src/
-│   ├── dynamic_vrp_simulator.py  # Real-time routing simulation
-│   ├── model_integration.py      # ML model wrapper
-│   └── comparison_viz.py         # Visualization tools
-├── logs/                         # Training logs and checkpoints
-├── results/                      # Output visualizations
-├── README.md
-└── requirements.txt
-```
-
----
-
-## 🚦 Quick Start
+##  Quick Start
 
 ### 1. Setup Environment
 ```bash
@@ -144,32 +127,16 @@ This bridges the gap between academic VRP solvers and real-world logistics needs
 
 ---
 
-## 📈 Training Details
+##  Training Details
 
 - **Dataset:** 10,000 synthetic VRP instances (10-20 locations each)
-- **Training Time:** ~2-3 hours on consumer GPU
+- **Training Time:** just under 1 hour on consumer grade GPU
 - **Model Architecture:** Attention-based encoder-decoder
 - **Optimization:** Policy gradient reinforcement learning
 
 ---
 
-## 🔍 Key Concepts
-
-### Vehicle Routing Problem (VRP)
-Classic optimization problem: find the shortest route visiting all locations exactly once. NP-hard computational complexity.
-
-### Reinforcement Learning (RL)
-Machine learning paradigm where the model learns optimal strategies through trial and error, guided by rewards (shorter routes = higher rewards).
-
-### Attention Mechanism
-Neural network architecture that learns which locations are most relevant when making routing decisions at each step.
-
-### Dynamic VRP
-Variant where new delivery requests arrive during route execution, requiring real-time adaptation. This is what actual logistics companies face daily.
-
----
-
-## 🎓 Project Contributions
+## Project Contributions
 
 **What We Used:**
 - VRP-RL open-source codebase (base model)
@@ -183,13 +150,6 @@ Variant where new delivery requests arrive during route execution, requiring rea
 - Practical deployment-ready system
 
 **Innovation:** We transformed a static optimization model into a dynamic, real-world applicable system that handles the practical challenge of incremental information arrival.
-
----
-
-## 📚 References
-
-- Kool, W., van Hoof, H., & Welling, M. (2019). "Attention, Learn to Solve Routing Problems!" ICLR 2019.
-- VRP-RL Repository: [github.com/OptMLGroup/VRP-RL](https://github.com/OptMLGroup/VRP-RL)
 
 ---
 
@@ -207,9 +167,6 @@ Mirage
 
 This project uses the VRP-RL codebase under its original license. Our dynamic routing extensions are provided as-is for educational purposes.
 
----
-
-## 🚧 Future Work
 
 - Integration with Google Maps API for real-world routing
 - Support for vehicle capacity constraints
